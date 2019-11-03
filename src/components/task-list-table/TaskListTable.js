@@ -1,4 +1,4 @@
-import React from "./node_modules/react";
+import React from "react";
 import { tasks } from '../../services/data.json';
 
 export default function TaskListTable() {

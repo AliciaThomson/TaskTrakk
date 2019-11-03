@@ -1,5 +1,5 @@
 import React from "react";
-import TaskListTable from "../components/taskListTable/TaskListTable";
+import TaskListTable from "../components/task-list-table/TaskListTable";
 
 export default function Dashboard() {
   return (
