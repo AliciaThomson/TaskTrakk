@@ -9,7 +9,7 @@ export default function SideBarNav(props) {
       <div className="sidebar">
         <ul className="navigation">
           {mainNav.map((navLink, index) => (
-            <li><Link to={ navLink.path }>{ navLink.text }</Link></li>
+            <li key={navLink.path}><Link to={navLink.path}>{navLink.text}</Link></li>
           ))}
         </ul>
       </div>

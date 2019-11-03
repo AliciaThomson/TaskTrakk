@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import SideBarNav from './components/sidebar-nav/SideBarNav';
 import Dashboard from './pages/Dashboard';
@@ -28,7 +27,7 @@ function App() {
       <SideBarNav mainNav={mainNav} />
         <Switch>
         {mainNav.map((navLink, index) => (
-          <Route path={navLink.path}>
+          <Route key={navLink.path} path={navLink.path}>
             {navLink.view}
           </Route>
         ))}
