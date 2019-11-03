@@ -1,7 +1,5 @@
 import React from "./node_modules/react";
-import {
-  Link
-} from "./node_modules/react-router-dom";
+import { Link } from "./node_modules/react-router-dom";
 import Logo from "../../assets/images/Logo.svg";
 import "../../assets/fonts/icon-font.css";
 import "./SideBarNav.scss";
