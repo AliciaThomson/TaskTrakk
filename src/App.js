@@ -8,6 +8,7 @@ import SideBarNav from './components/sidebar-nav/SideBarNav';
 import Dashboard from './pages/Dashboard';
 import Project from './pages/Project';
 import "./styles/base/base.scss";
+import "./styles/base/typography.scss";
 
 function App() {
   return (
