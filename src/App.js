@@ -11,7 +11,7 @@ import Project from './pages/Project';
 const mainNav = [
   {
     text: 'Dashboard',
-    path: '/dashboard',
+    path: '/',
     view: <Dashboard />
   },
   {
@@ -25,12 +25,13 @@ function App() {
   return (
     <Router>
       <SideBarNav mainNav={mainNav} />
-        <Switch>
-        {mainNav.map((navLink, index) => (
-          <Route key={navLink.path} path={navLink.path}>
-            {navLink.view}
-          </Route>
-        ))}
+      <Switch> 
+        <Route key="dashboard" exact path="/">
+          <Dashboard />
+        </Route>
+        <Route key="project" path="/project">
+          <Project />
+        </Route>
         </Switch>
     </Router>
   );
