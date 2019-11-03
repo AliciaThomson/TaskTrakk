@@ -1,12 +1,18 @@
 html, body {
+  margin: 0;
   height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 #root {
   display:flex;
   height:100%;
 }
 .mainContainer {
-  background-color: #fff;
+  background-color: #F5F4F9;
   height:100%;
   width:100%;
 }
