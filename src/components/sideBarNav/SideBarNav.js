@@ -1,7 +1,7 @@
-import React from "react";
+import React from "./node_modules/react";
 import {
   Link
-} from "react-router-dom";
+} from "./node_modules/react-router-dom";
 import Logo from "../../assets/images/Logo.svg";
 import "../../assets/fonts/icon-font.css";
 import "./SideBarNav.scss";

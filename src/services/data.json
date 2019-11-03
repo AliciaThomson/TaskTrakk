@@ -1,0 +1,96 @@
+{
+  "users": [
+    {
+      "ID" : "79828918",
+      "firstname" : "Jane",
+      "lastname" : "Doe",
+      "username" : "JaneDoe",
+      "password" : "",
+      "email" : "janedoe@gmail.com"
+    },
+    {
+      "ID" : "86149507",
+      "firstname" : "Joe",
+      "lastname" : "Smith",
+      "username" : "JoeSmith",
+      "password" : "",
+      "email" : "joesmith@gmail.com"
+    }
+  ],
+  "projects": [
+    {
+      "ID" : "64587749",
+      "label" : "First Project"
+    },
+    {
+      "ID" : "58057811",
+      "label" : "Second Project"
+    }
+  ],
+  "miletones": [
+    {
+      "ID" : "68348564",
+      "label" : "Beta Launch",
+      "startdate" : "1570993523",
+      "enddate" : "1572807923"
+    },
+    {
+      "ID" : "46475846",
+      "label" : "November Sprint",
+      "startdate" : "1567537721",
+      "enddate" : "1574622556"
+    },
+    {
+      "ID" : "18786162",
+      "label" : "Redesign",
+      "startdate" : "1570302537",
+      "enddate" : "1575400172"
+    }
+  ],
+  "tasks": [
+    {
+      "ID" : "28809008",
+      "label" : "Tooltip Arrows in Modal facing the wrong way",
+      "author" : "79828918",
+      "assignee" : "86149507",
+      "status" : "inprogress",
+      "severity" : "normal",
+      "miletone" : "68348564",
+      "project" : "64587749",
+      "created" : "1572376359"
+    },
+    {
+      "ID" : "47476431",
+      "label" : "Dropdown toggle requires two clicks",
+      "author" : "86149507",
+      "assignee" : "79828918",
+      "status" : "tobetested",
+      "severity" : "normal",
+      "miletone" : "68348564",
+      "project" : "64587749",
+      "created" : "1571771579"
+    },
+    {
+      "ID" : "40252146",
+      "label" : "Back button throws a 404 error",
+      "author" : "79828918",
+      "assignee" : "86149507",
+      "status" : "open",
+      "severity" : "blocker",
+      "miletone" : "46475846",
+      "project" : "58057811",
+      "created" : "1571598795"
+    },
+    {
+      "ID" : "40252146",
+      "label" : "Tooltip unnecessarily breaks into multiple lines",
+      "author" : "86149507",
+      "assignee" : "79828918",
+      "status" : "enhancement",
+      "severity" : "completed",
+      "miletone" : "18786162",
+      "project" : "58057811",
+      "created" : "1570907613"
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import SideBarNav from './components/sidebar-nav/SideBarNav';
+import SideBarNav from './components/sideBarNav/SideBarNav';
 import Dashboard from './pages/Dashboard';
 import Project from './pages/Project';
 import "./styles/base/base.scss";
