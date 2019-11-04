@@ -1,7 +1,11 @@
 import React from "react";
 import { tasks, users } from '../../services/data.json';
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faArrowUp, faArrowDown, faInfo,
+  faExclamationTriangle, faExclamation
+} from '@fortawesome/free-solid-svg-icons';
+import './TaskListTable.scss';
 
 
 function getUser(id, users) {
@@ -15,6 +19,7 @@ export default function TaskListTable() {
       <thead>
         <tr>
           <th></th>
+          <th></th>
           <th>Assignee</th>
           <th>Status</th>
           <th></th>
@@ -23,9 +28,9 @@ export default function TaskListTable() {
       {tasks.map((task) => (
         <tr>
           <td>
-            {task.severity === 'enhancement' && <i className="fas fa-info"></i>}
-            {task.severity === 'normal' && <i className="fas fa-exclamation-triangle"></i>}
-            {task.severity === 'critical' && <i className="fas fa-exclamation"></i>}
+            {task.severity === 'enhancement' && <div className="severity severity-enhancement"><FontAwesomeIcon icon={faInfo} /></div>}
+            {task.severity === 'normal' && <div className="severity severity-normal"><FontAwesomeIcon icon={faExclamationTriangle} /></div>}
+            {task.severity === 'critical' && <div className="severity severity-critical"><FontAwesomeIcon icon={faExclamation} /></div>}
           </td>
           <td>
             <h4>{task.label}</h4>
@@ -35,9 +40,11 @@ export default function TaskListTable() {
             <h4>{getUser(task.assignee, users)}</h4>
           </td>
           <td>
-            <i className="fas fa-arrow-up"></i>
+            <h4>{task.status}</h4>
+          </td>
+          <td>
             <FontAwesomeIcon icon={faArrowUp} />
-            <i className="fas fa-arrow-down"></i>
+            <FontAwesomeIcon icon={faArrowDown} />
           </td>
          </tr>
       ))}

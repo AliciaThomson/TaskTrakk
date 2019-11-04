@@ -1,14 +1,55 @@
 html, body {
   margin: 0;
   height: 100%;
+  font-size:16px;
+  box-sizing: border-box;
 }
 #root {
   display:flex;
-  height:100%;
+  min-height:100%;
 }
 .mainContainer {
   background-color: #F5F4F9;
-  height:100%;
   width:100%;    
-  padding: 30px 45px;
+  padding: 40px 45px;
+}
+.rightPanel {
+  min-width: 220px;
+  padding: 40px 30px;
+}
+label {
+  display:block;
+  margin-bottom: 15px;
+  font-size: 0.85em;
+  display: block;
+  margin-bottom: 15px;
+  color: #291963;
+}
+input, textarea, select {
+  display: block;
+  width: 100%;
+  background: #F5F4F9;
+  border: 1px solid #EAEAF2;
+  margin-top: 5px;
+  line-height: 1.3;
+  font-size: 1em;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  color: #4e4c57;
+  border-radius: 6px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+button {
+  color: #fff;
+    font-weight: bold;
+    background: linear-gradient(45deg, #8f65e8 0%, #8d9cf6 100%);
+    border-radius: 6px;
+    padding: 10px 12px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    min-width: 115px;
+    margin-top: 30px;
+    border: none;
 }
