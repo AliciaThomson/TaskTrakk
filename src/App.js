@@ -9,12 +9,13 @@ import Dashboard from './pages/Dashboard';
 import Project from './pages/Project';
 import "./styles/base/base.scss";
 import "./styles/base/typography.scss";
+import "./styles/layout/layout.scss";
 import AddRecipeForm from "./components/create-task-form/CreateTaskForm";
 import TaskDetails from "./components/task-details/TaskDetails";
 
 export default class App extends React.Component {
   state = {
-    toggleTask: false
+    toggleTask: true
   }
   render() {
     return (
@@ -31,8 +32,8 @@ export default class App extends React.Component {
         {this.state.toggleTask ? (
           <TaskDetails />
         ) : (
-            <AddRecipeForm />
-          )}
+          <AddRecipeForm />
+        )}
       </Router>
     );
   }

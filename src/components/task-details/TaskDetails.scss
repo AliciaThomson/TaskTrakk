@@ -1,0 +1,35 @@
+.taskDetails {
+
+  &__severityStatus {
+    display:flex;
+    justify-content: space-between;
+  }
+  &__severity {
+    width: 40px;
+    height: 40px;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+    &.severity-critical {
+      background:#F1E2E2;
+      color:#C98C8C;
+    }
+    &.severity-normal {
+      background:#F4F0DF;
+      color:#BFB58E;
+    }
+    &.severity-enhancement {
+      background:#E2E8F1;
+      color:#879DBD;
+    }
+  }
+  &__status {
+    width: auto;
+  }
+  &__created {
+    margin-right:15px
+  }
+}

@@ -27,7 +27,7 @@
       "label" : "Second Project"
     }
   ],
-  "miletones": [
+  "milestones": [
     {
       "ID" : "68348564",
       "label" : "Beta Launch",
@@ -51,6 +51,7 @@
     {
       "ID" : "28809008",
       "label" : "Tooltip Arrows in Modal facing the wrong way",
+      "description": "On the home page, in the What’s new modal, the tooltip arrows are facing the wrong direction.",
       "author" : "79828918",
       "assignee" : "86149507",
       "status" : "In Progress",
