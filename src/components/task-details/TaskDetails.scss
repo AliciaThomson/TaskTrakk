@@ -30,6 +30,18 @@
     width: auto;
   }
   &__created {
-    margin-right:15px
+    margin-right:15px;
+    font-size: 0.95em;
+  }
+  &__author {
+    font-size: 0.95em;
+  }
+  &__project, &__milestone {
+    .detailLabel {
+      margin-bottom:0;
+    }
+    h4 {
+      margin-top:5px;
+    }
   }
 }

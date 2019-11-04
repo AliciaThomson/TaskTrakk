@@ -15,39 +15,44 @@ function getUser(id, users) {
 
 export default function TaskListTable() {
   return (
-    <table className="taskListTable">
-      <thead>
-        <tr>
-          <th></th>
-          <th></th>
-          <th>Assignee</th>
-          <th>Status</th>
-          <th></th>
-        </tr>
-      </thead>
-      {tasks.map((task) => (
-        <tr>
-          <td>
-            {task.severity === 'enhancement' && <div className="severity severity-enhancement"><FontAwesomeIcon icon={faInfo} /></div>}
-            {task.severity === 'normal' && <div className="severity severity-normal"><FontAwesomeIcon icon={faExclamationTriangle} /></div>}
-            {task.severity === 'critical' && <div className="severity severity-critical"><FontAwesomeIcon icon={faExclamation} /></div>}
-          </td>
-          <td>
-            <h4>{task.label}</h4>
-            <p>Created by {getUser(task.author, users)}</p>
-          </td>
-          <td>
-            <h4>{getUser(task.assignee, users)}</h4>
-          </td>
-          <td>
-            <h4>{task.status}</h4>
-          </td>
-          <td>
-            <FontAwesomeIcon icon={faArrowUp} />
-            <FontAwesomeIcon icon={faArrowDown} />
-          </td>
-         </tr>
-      ))}
-    </table>
+    <div className="taskListTable">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">{tasks.length} Issues</th>
+            <th>Assignee</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {tasks.map((task) => (
+            <tr key={task.ID} className="task">
+              <td>
+                {task.severity === 'enhancement' && <div className="task__severity task__severity--enhancement"><FontAwesomeIcon icon={faInfo} /></div>}
+                {task.severity === 'normal' && <div className="task__severity task__severity--normal"><FontAwesomeIcon icon={faExclamationTriangle} /></div>}
+                {task.severity === 'critical' && <div className="task__severity task__severity--critical"><FontAwesomeIcon icon={faExclamation} /></div>}
+              </td>
+              <td>
+                <h4>{task.label}</h4>
+                <p>Created by {getUser(task.author, users)}</p>
+              </td>
+              <td>
+                <h4>{getUser(task.assignee, users)}</h4>
+              </td>
+              <td>
+                <h4 className="task__status">{task.status}</h4>
+              </td>
+              <td>
+                <div className="task__controls">
+                  <FontAwesomeIcon className="task__controls__arrow" icon={faArrowUp} />
+                  <FontAwesomeIcon className="task__controls__arrow" icon={faArrowDown} />
+                </div>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   )
 }

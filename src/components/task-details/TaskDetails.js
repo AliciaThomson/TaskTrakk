@@ -25,21 +25,25 @@ export default function TaskDetails() {
       <h3>{task.label}</h3>
       <span className="taskDetails__created">{formatDate(task.created)}</span>
       <span className="taskDetails__author">{getUser(task.author, users)}</span>
-      <p className="taskDetail__description">{task.description}</p>
-      <div className="column-half">
-        <p>Project:</p>
-        <h5>{getProject(task.project, projects)}</h5>
-      </div>
-      <div className="column-half">
-        <p>Milestone:</p>
-        <h5>{getMilestone(task.miletone, milestones)}</h5>
+      <p className="taskDetails__description">{task.description}</p>
+      <div className="row">
+        <div className="column-half taskDetails__project">
+          <p className="detailLabel">Project:</p>
+          <h4>{getProject(task.project, projects)}</h4>
+        </div>
+        <div className="column-half taskDetails__milestone">
+          <p className="detailLabel">Milestone:</p>
+          <h4>{getMilestone(task.miletone, milestones)}</h4>
+        </div>
       </div>
       <form>
         <label>
           Comments
           <textarea name="comments"></textarea>
-          <button type="button" className="secondary">Submit</button>
-          <button type="button">Submit as Solved</button>
+          <div className="alignRight">
+            <button type="button" className="button button--secondary">Submit</button>
+            <button type="button" className="button">Submit as Solved</button>
+          </div>
         </label>
       </form>
     </div>

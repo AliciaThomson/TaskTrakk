@@ -9,9 +9,12 @@
   padding: 40px 45px;
 }
 .rightPanel {
-  min-width: 220px;
+  min-width: 285px;
   padding: 40px 30px;
 }
-.column-half {
-  width:50%;
+.row {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-column-gap: 30px;
 }

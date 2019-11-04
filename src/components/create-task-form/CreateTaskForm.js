@@ -22,7 +22,7 @@ export default class CreateTaskForm extends React.Component {
 
   render() {
     return (
-      <div className="rightPanel">
+      <div className="rightPanel createTaskForm">
         <h2>Create New Task</h2>
         <form onSubmit={this.handleSubmit}>
           <label for="label">
