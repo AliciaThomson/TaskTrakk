@@ -53,12 +53,42 @@ select {
     color:#291A64;
     min-width: 0;
   }
+  &--transparent {
+    background:transparent;    
+    font-weight: 600;
+    color:#291A64;
+    min-width: 0;
+    text-transform: none;
+    padding: 6px 10px;
+
+    &.button--selected {
+      background:#fff
+    }    
+  }
   + .button {
     margin-left:15px
   }
 }
+.iconButton {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+
+  .icon {
+    width: 2em;
+    height: 2em;
+  }
+}
 .alignRight {
   text-align: right;
+}
+.dataTable {
+  background: #fff;
+  width: 100%;
+  border-radius: 20px;
+  padding: 12px 20px;
 }
 table {
   width:100%;
@@ -76,5 +106,26 @@ table {
   }
   td {    
     padding: 12px 5px;
+  }
+}
+.filterOptions {
+  margin-bottom:15px;
+
+  label {
+    display:inline-block;
+    margin: 0 0 0 15px
+  }
+  select {
+    display:inline-block;
+    background-color:transparent;
+    background-size: 10px;
+    font-weight: 600;
+    border:none;
+    width: auto;
+    color:#291A64;
+    margin-left:15px
+  }
+  .button {
+    margin-top:0;
   }
 }
