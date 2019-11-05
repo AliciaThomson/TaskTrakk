@@ -1,6 +1,14 @@
 # TaskTrakk
 A beautiful and intuitive issue tracker with a fun twist
 
+## Dashboard
+
+![](https://raw.githubusercontent.com/AliciaThomson/TaskTrakkDesign/master/screenshots/Dashboard-TrackTime.png)
+
+## Project Page 
+
+![](https://raw.githubusercontent.com/AliciaThomson/TaskTrakkDesign/master/screenshots/Project-TrackTime.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
